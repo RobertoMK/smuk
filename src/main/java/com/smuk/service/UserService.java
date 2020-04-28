@@ -1,12 +1,12 @@
 package com.smuk.service;
 
 import com.smuk.service.dto.UserListDTO;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 
 public interface UserService {
 
-    List<UserListDTO> findAllUsers();
+    Page<UserListDTO> findAllUsers( UserListDTO userListDTO, Pageable pageable);
 
 }

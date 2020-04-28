@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import java.io.Serializable;
 
 @Getter
@@ -21,8 +22,6 @@ public class UserListDTO implements Serializable {
     private String username;
 
     private Boolean enabled;
-
-    private String cnpj;
 
     private String type;
 }
